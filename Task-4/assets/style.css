@@ -1,0 +1,113 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+ 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    background-color: rgba(240, 248, 255, 0.925);
+    padding: 20px;
+}
+/* Main content */
+main {
+  
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+  
+    flex-shrink: 0;
+    font-size: .5rem;
+}
+
+/* hide sections until they are shown via the click events */
+#questions,
+#final,
+#highscores,
+#yaynay {
+    display: none;  
+  } 
+
+/* Remove bullet points from answers list */
+ul.nobullets {
+list-style-type: none;
+}
+
+/* Answer button styling */
+.ansBtn,
+.ansBtn:hover,
+.ansBtn:active,
+.ansBtn:focus,
+.ansBtn:active:focus {
+    box-shadow: none;
+    outline: none;
+    min-width: 100%;
+    background-color: #4b4b4b;
+}
+
+/* Media queries for background image from https://web.dev/optimize-css-background-images-with-media-queries/ */
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        min-height: 100vh;
+        background: linear-gradient(rgba(48, 48, 48, 0.726),rgba(0, 0, 0, 0.671)),url('https://i.pinimg.com/originals/5b/4c/d2/5b4cd292f6f382ab8d8a51b9fcaad5ed.jpg');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    body {
+        min-height: 100vh;
+        background: linear-gradient(rgba(48, 48, 48, 0.726),rgba(0, 0, 0, 0.671)),url('https://i.pinimg.com/originals/5b/4c/d2/5b4cd292f6f382ab8d8a51b9fcaad5ed.jpg');
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+   }
+}
+
+.timer p{
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    color: red;
+    background-color: rgba(75, 255, 40, 0.767);
+    justify-content: center;
+}
+.col-8{
+    padding-top:20px ;
+}
+#view-scores{
+    background-color: rgba(0, 204, 255, 0.904);
+    color: black;
+    min-width: 20%;
+}

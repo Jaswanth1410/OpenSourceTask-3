@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Maiandra GD";
+        }
+        body {
+            background-image:
+                linear-gradient(rgba(23, 24, 34, 0.404),
+                    rgba(23, 24, 34, 0.459)),
+                url('https://wallpapercave.com/wp/wp3642678.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+        nav{
+            background-color: black;
+        }
+        .head{
+            color: whitesmoke;
+            font-size: larger;
+            padding: 10px;
+        }
+        .form{
+           margin: 2%;
+           background-color: rgba(19, 19, 19, 0.842);
+           padding: 2%;
+           min-width: 60%;
+        }
+        .subhead{
+            color: whitesmoke;
+            font-size: larger;
+            padding: 10px;
+        }
+        .answer{
+            margin: 2%;
+            background-color: rgba(19, 19, 19, 0.842);
+            padding: 2%;
+            min-width: 60%;
+        }
+        .ans{
+            color: coral;
+            font-size: 12px;
+            
+        }
+        span{
+            color: greenyellow;
+        }
+        button{
+            padding: 3px;
+            color: red;
+            background-color: transparent;
+            border: tomato 1px solid;
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rgb(9, 179, 9) ;
+            color: black;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="head">Dictionary</div>
+    </nav>
+    <Center><form action="word">
+        <div class="form">
+        <div class="subhead">Search For Meaning Of any word</div>
+    <input type="text" name="search" placeholder="Enter Word">
+    <button type="submit" value="Submit">search</button>
+</div>
+
+</form>
+<section class="answer">
+<div class="ans">Meaning : <span>{{meaning}}</span> </div>
+<div class="ans">Synonyms : <span>{{synonyms}}</span> </div>
+<div class="ans">Antonyms : <span>{{antonyms}}</span> </div>
+</section>
+</Center>
+</body>
+</html>

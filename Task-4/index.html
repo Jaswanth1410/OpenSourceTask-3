@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Page Title -->
+    <title>Javascript Code Quiz</title>
+</head>
+
+<body>
+    <!-- Container for Header -->
+    <header class="container-fluid mb-5">
+        <!-- div for scores link and time -->
+        <div class="row">
+            <!-- View highscores -->
+            <div class="col-8">
+                <!-- <a href="">View Highscores</a> -->
+                <button id="view-scores" type="button" class="btn btn-secondary d-inline-block mt-1">View High Scores</button>
+            </div>
+            <!-- Timer -->
+            <div class="col-4 timer">
+                <p class="d-flex time">Watch out the Time left :75s</p>
+            </div>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Container for Intro, Questions, Answers -->
+        <div class="container">
+            <!-- Section for H1 and Intro // Hide upon Start-->
+            <section id="intro">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <h1 class="d-flex justify-content-center text-center">Welcome to the Quiz Challenge!</h1>
+                        <p class="d-flex justify-content-center text-center">Try to answer the following questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                        <button id="start" type="button" class="btn btn-success mx-auto d-block">Start Quiz</button></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for Question and Answers // Show upon Start-->
+            <section id="questions">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <h2 id="question">I'm a question</h2>
+                        <ul class="px-0 py-0 nobullets">
+                            <li class="mb-3"><button id="answer1" value="0" type="button"
+                                    class="btn btn-success ansBtn">Answer1</button></li>
+                            <li class="mb-3"><button id="answer2" value="1" type="button"
+                                    class="btn btn-success ansBtn">Answer2</button></li>
+                            <li class="mb-3"><button id="answer3" value="2" type="button"
+                                    class="btn btn-success ansBtn">Answer3</button></li>
+                            <li class="mb-3"><button id="answer4" value="3" type="button"
+                                    class="btn btn-success ansBtn">Answer4</button></li>
+                        </ul>
+                        <div id="yaynay" class="font-weight-light font-italic">
+                            <hr>
+                            <!-- Correct or Wrong will be added via JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for Final Score and Name -->
+            <section id="final">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <h2>All done!</h2>
+                        <p>Your final score is: <span id="score" class="pl-1">0</span></p>
+                        <!-- <p class="score">Your final score is: </p> -->
+                        <p>Enter initials: <span class="ml-1"><input placeholder="initials" id="initials" /></span>
+                            <button id="submit-score" class="btn btn-success mx-1 my-1 d-inline-block">Submit</button>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section for High Scores -->
+            <section id="highscores">
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                            <h2>High Scores</h2>
+                            <!-- High scores should be added as a sorted desc list -->
+                            <ol id="score-list">
+                                <!-- <li></li> -->
+                            </ol>
+                            <button id="goback" class="btn btn-success d-inline-block mx-1 my-1">Go back</button>
+                            <button id="clearscores" class="btn btn-success mx-1 my-1 d-inline-block">Clear scores</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Container Ends -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- Photo credit -->
+    
+
+    <!-- Javascript  -->
+    <script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

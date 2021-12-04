@@ -1,0 +1,45 @@
+body {
+    background-image:
+        linear-gradient(rgba(23, 24, 34, 0.404),
+            rgba(23, 24, 34, 0.459)),
+        url('../images/water-blue.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: "Maiandra GD";
+}
+
+.title-head,.desc-head,.del-head {
+    color: white;
+    font-family: "Maiandra GD";
+    letter-spacing: 1.5px;
+    font-size: 20px;
+}
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 600;
+}
+.col-md-8 .row{
+    border-bottom:2px solid white ;
+}
+.h{
+    padding-bottom: 20px;
+    color: tomato;
+    font-size: 20px;
+}
+.c1{
+    border: whitesmoke solid 1px;
+    background: transparent;
+}
+.c1 .form-control{
+    border: 1.5px solid black;
+    background: rgba(255, 249, 237, 0.685);
+    color: rgb(0, 0, 0);
+}
+.c1 .btn-success{
+    background-color: rgba(245, 245, 245, 0.664);
+    color: black;
+}
+.c1 .btn-success:hover{
+    background-color: rgba(102, 255, 0, 0.664);
+}
